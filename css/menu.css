@@ -1,0 +1,74 @@
+.main_menu { position:relative; z-index:500;  text-align:center; }
+.main_menu ul { padding:0px; margin:0px; display:inline-block; }
+.main_menu > ul > li { display:inline-block;margin:0 75px 0 0; position:relative; }
+.main_menu > ul > li:last-child { background:none; }
+.main_menu > ul > li > a {letter-spacing: -0.54px; border-top:14px solid transparent; display: block; font-size: 16px; color:#1C273C; padding:0; text-transform:none; text-align:left; text-decoration:none; transition: all 0.8s ease 0s; font-weight:500; line-height: 100px; }
+.main_menu > ul > li > a.last { border:none;}
+.main_menu > ul > li > a:hover{ border-top:14px solid #2E9BC9;}
+.main_menu > ul > li.current_page_item > a { border-top:14px solid #2E9BC9;}
+/* Responsive Menu
+==========================*/
+
+/* hide the link until viewport size is reached */
+a.meanmenu-reveal { display: none; }
+/* when under viewport size, .mean-container is added to body */
+.mean-nav ul li a span{color:#00adba;}
+.mean-bar { float: left;  min-height: inherit; position: relative; width: 100%; z-index: 999; }
+a.meanmenu-reveal {  position: absolute; top: 0; right: 0;  cursor: pointer;  color: #fff; text-decoration: none; font-size: 13px; text-indent: -9999em; line-height: 22px; font-size: 1px; font-weight: 700; display:none!important; }
+a.meanmenu-reveal span { display: block;  }
+.mean-nav { background: #222 ; float: left; position: fixed; top:50px; left:-15px; right: -15px;   }
+.mean-nav ul {height:100vh; padding: 15px 10%; margin: 0; width: 100%; list-style-type: none; z-index:99; position:relative;  }
+.mean-nav ul li { position: relative; float: left; width: 100%; }
+.mean-nav ul li a { display: block; float: left; width: 100%; padding:15px 5px; margin: 0; font-size:16px; text-transform:capitalize; text-align: center; color: #fff; border-bottom:1px solid #707070; text-decoration: none; }
+.mean-nav ul li li a { width: 100%; padding:7px 6%; text-transform:none; border-bottom: 1px solid #fff; opacity: 0.75; filter: alpha(opacity=75); text-shadow: none !important; visibility: visible; background:#70B843!important; color: #fff !important;}
+.mean-nav ul li.mean-last a { border-bottom: none; margin-bottom: 0; }
+.mean-nav ul li li li a { width: 100%; padding: 14px 15%; }
+.mean-nav ul li li li li a { width: 100%; padding: 14px 20%; }
+.mean-nav ul li li li li li a { width: 50%; padding: 14px 25%; }
+.mean-nav ul li a.mean-expand { width: 26px; height: 39px; border: none !important; padding: 6px 5px 3px 5px !important; text-align: center; position: absolute; right: 0; top: 0; z-index: 2; font-weight: 700; font-family:Verdana, Geneva, sans-serif; color:#fff; }
+.mean-nav ul li.current_page_item a { background: #000;color: #fff; }
+.main_menu > ul > li > a.menu1 { background:url(../images/home_ico.png) no-repeat 10px center; padding-left:45px; }
+.main_menu > ul > li.current_page_item > a.menu1 { color:#238de5; background:url(../images/home_ico_h.png) no-repeat 10px center; background-color:#fff; }
+.main_menu > ul > li:hover > a.menu1 { background:url(../images/home_ico_h.png) no-repeat 10px center; background-color:#fff; }
+.main_menu > ul > li > a.menu2 { background:url(../images/about_ico.png) no-repeat 10px center; padding-left:45px; }
+.main_menu > ul > li.current_page_item > a.menu2 { color:#238de5; background:url(../images/about_ico_h.png) no-repeat 10px center; background-color:#fff; }
+.main_menu > ul > li:hover > a.menu2 { background:url(../images/about_ico_h.png) no-repeat 10px center; background-color:#fff; }
+.main_menu > ul > li > a.menu3 { background:url(../images/serv_ico.png) no-repeat 10px center; padding-left:45px; }
+.main_menu > ul > li.current_page_item > a.menu3 { color:#238de5; background:url(../images/serv_ico_h.png) no-repeat 10px center; background-color:#fff; }
+.main_menu > ul > li:hover > a.menu3 { background:url(../images/serv_ico_h.png) no-repeat 10px center; background-color:#fff; }
+.main_menu > ul > li > a.menu4 { background:url(../images/cnct_ico.png) no-repeat 10px center; padding-left:45px; }
+.main_menu > ul > li.current_page_item > a.menu4 { color:#238de5; background:url(../images/cnct_ico_h.png) no-repeat 10px center; background-color:#fff; }
+.main_menu > ul > li:hover > a.menu4 { background:url(../images/cnct_ico_h.png) no-repeat 10px center; background-color:#fff; }
+
+
+
+/*=====================================================IPAD VERSION VERTICAL=======================================================*/
+@media (max-width:767px) {
+.lines-button{ display:block;}
+.nevigation { width:100%;}
+.lines-button { border-radius: 0.57143rem; cursor: pointer; padding: 0px; position: absolute; right: 15px; top: 15px; transition: all 0.3s ease 0s; z-index: 99; }
+.lines-button:hover { opacity: 1; }
+.lines { background:#2E9BC9 ; border-radius: 0.28571rem; display: inline-block; height: 5px; position: relative; transition: all 0.3s ease 0s; width: 30px; }
+.lines:before, .lines:after { background: #2E9BC9; border-radius: 0.28571rem; content: ""; display: inline-block; height: 5px; left: 0; position: absolute; transform-origin: 0.28571rem center 0; transition: all 0.3s ease 0s; width: 30px; }
+.lines:before { top: 10px; }
+.lines:after { top: -10px; }
+.lines-button:hover .lines:before { top: 10px; }
+.lines-button:hover .lines:after { top: -10px; }
+.lines-button.meanclose { transform: scale3d(0.8, 0.8, 0.8); }
+.lines-button.x2 .lines { transition: background 0.3s ease 0.5s; }
+.lines-button.x2 .lines:before, .lines-button.x2 .lines:after { transform-origin: 50% 50% 0; transition: top 0.3s ease 0.6s, transform 0.3s ease 0s; }
+.lines-button.x2.meanclose .lines { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); transition: background 0.3s ease 0s; }
+.lines-button.x2.meanclose .lines:before, .lines-button.x2.meanclose .lines:after { top: 0; transition: top 0.3s ease 0s, transform 0.3s ease 0.5s; width: 40px; }
+.lines-button.x2.meanclose .lines:before { transform: rotate3d(0, 0, 1, 45deg); }
+.lines-button.x2.meanclose .lines:after { transform: rotate3d(0, 0, 1, -45deg); }
+}
+/*=====================================================END IPAD VERSION VERTICAL===================================================*/
+
+.menu_line {
+	width: 32px;
+	height: 32px;
+	background: url('../images/ico-hamburger.png') no-repeat center;
+	float: left;
+}
+
+.lines-button.active .menu_line{background: url('../images/ico-hamburger-close.png') no-repeat center;}
